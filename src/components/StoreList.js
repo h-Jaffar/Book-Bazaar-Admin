@@ -4,22 +4,22 @@ import React from "react";
 function StoreList() {
   var store = [
     {
-      name: "book store 1",
+      name: "ABC Book Store",
       email: "bs1@gmail.com",
       contact: "XXXX-XXXXXXX",
-      address: "qwerty, uiop, pakistan",
+      address: "Lahore, Pakistan",
     },
     {
-      name: "book store 2",
+      name: "MRO Book Store",
       email: "bs2@gmail.com",
       contact: "XXXX-XXXXXXX",
-      address: "qwerty, uiop, pakistan",
+      address: "Karachi, Pakistan",
     },
     {
-      name: "book store 3",
+      name: "XYZ Book Store",
       email: "bs3@gmail.com",
       contact: "XXXX-XXXXXXX",
-      address: "qwerty, uiop, pakistan",
+      address: "Islamabad, Pakistan",
     },
   ];
 
@@ -44,9 +44,9 @@ function StoreList() {
             <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
               <a
                 href="/"
-                class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none"
+                class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none hrtag"
               >
-                <span class="fs-5 d-none d-sm-inline">Book Bazaar</span>
+                <span class="fs-5 d-none d-sm-inline sidebartitle">Book Bazaar</span>
               </a>
               <ul
                 class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"

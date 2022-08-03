@@ -5,16 +5,16 @@ import Sidebar from "./Sidebar";
 function StoreRequests() {
   var stores = [
     {
-      name: "book store 1",
-      email: "bs1@gmail.com",
-      contact: "XXXX-XXXXXXX",
-      address: "qwerty, uiop, pakistan",
+      name: "Rizwan Book Store",
+      email: "rizwan@bookstore.com",
+      contact: "0900-78601",
+      address: "Lahore, Pakistan",
     },
     {
-      name: "book store 2",
-      email: "bs2@gmail.com",
-      contact: "XXXX-XXXXXXX",
-      address: "qwerty, uiop, pakistan",
+      name: "Khokhar Book Depot",
+      email: "khokhar@bookdepot.com",
+      contact: "0801-98702",
+      address: "Karachi, Pakistan",
     },
   ];
 
@@ -41,9 +41,9 @@ function StoreRequests() {
             <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
               <a
                 href="/"
-                class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none"
+                class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none hrtag"
               >
-                <span class="fs-5 d-none d-sm-inline">Book Bazaar</span>
+                <span class="fs-5 d-none d-sm-inline sidebartitle">Book Bazaar</span>
               </a>
               <ul
                 class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"

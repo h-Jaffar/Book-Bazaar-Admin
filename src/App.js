@@ -11,7 +11,7 @@ function App() {
   return (
     <>
     <Routes>
-        <Route path="/" element={<Sidebar />}></Route>
+        <Route path="/" element={<StoreList />}></Route>
         <Route path="/createstore" element={<CreateStore />}></Route>
         <Route path="/storerequests" element={<StoreRequests />}></Route>
         <Route path="/storelist" element={<StoreList />}></Route>

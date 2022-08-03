@@ -11,9 +11,9 @@ function CreateStore() {
             <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
               <a
                 href="/"
-                class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none"
+                class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none hrtag"
               >
-                <span class="fs-5 d-none d-sm-inline">Book Bazaar</span>
+                <h1 class="fs-5 d-none d-sm-inline sidebartitle">Book Bazaar</h1>
               </a>
               <ul
                 class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
@@ -21,19 +21,19 @@ function CreateStore() {
               >
                 <li class="nav-item">
                   <a href="/storelist" class="nav-link align-middle px-0 sidebartag">
-                    <i class="fa-solid fa-building"></i>{" "}
+                    <i class="fa-solid fa-list"></i>{" "}
                     <span class="ms-1 d-none d-sm-inline">Store List</span>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a href="/createstore" class="nav-link align-middle px-0 sidebartag">
-                    <i class="fa-solid fa-building"></i>{" "}
+                    <i class="fa-solid fa-add"></i>{" "}
                     <span class="ms-1 d-none d-sm-inline">Create Store</span>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a href="/storerequests" class="nav-link align-middle px-0 sidebartag">
-                    <i class="fa-solid fa-building"></i>{" "}
+                    <i class="fa-solid fa-store"></i>{" "}
                     <span class="ms-1 d-none d-sm-inline">Store Requests</span>
                   </a>
                 </li>

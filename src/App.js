@@ -5,6 +5,7 @@ import CreateStore from "./components/CreateStore";
 import Sidebar from "./components/Sidebar";
 import StoreRequests from "./components/StoreRequests";
 import StoreList from "./components/StoreList";
+import Requestinfo from "./components/Requestinfo";
 
 
 function App() {
@@ -12,9 +13,10 @@ function App() {
     <>
     <Routes>
         <Route path="/" element={<StoreList />}></Route>
-        <Route path="/createstore" element={<CreateStore />}></Route>
+        {/* <Route path="/createstore" element={<CreateStore />}></Route> */}
         <Route path="/storerequests" element={<StoreRequests />}></Route>
         <Route path="/storelist" element={<StoreList />}></Route>
+        <Route path="/requestinfo" element={<Requestinfo />}></Route>
         <Route
           path="*"
           element={

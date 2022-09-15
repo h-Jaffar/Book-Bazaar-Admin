@@ -1,47 +1,45 @@
-import "../css/StoreList.css";
+import "../css/Requestinfo.css";
 import React from "react";
+import Sidebar from "./Sidebar";
+import "../css/StoreRequests.css";
 import { Link } from "react-router-dom";
 
-function StoreList() {
-  var store = [
+function Requestinfo() {
+  var stores = [
     {
-      image: "https://images.pexels.com/photos/626986/pexels-photo-626986.jpeg?auto=compress&cs=tinysrgb&w=600",
-      name: "ABC Book Store",
-      email: "bs1@gmail.com",
-      contact: "XXXX-XXXXXXX",
+      name: "Rizwan Book Store",
+      email: "rizwan@bookstore.com",
+      contact: "0900-78601",
       address: "Lahore, Pakistan",
+      image: "",
     },
-    {
-      image: "https://images.pexels.com/photos/2067569/pexels-photo-2067569.jpeg?auto=compress&cs=tinysrgb&w=600",
-      name: "MRO Book Store",
-      email: "bs2@gmail.com",
-      contact: "XXXX-XXXXXXX",
-      address: "Karachi, Pakistan",
-    },
-    {
-      image: "https://images.pexels.com/photos/1329550/pexels-photo-1329550.jpeg?auto=compress&cs=tinysrgb&w=600",
-      name: "XYZ Book Store",
-      email: "bs3@gmail.com",
-      contact: "XXXX-XXXXXXX",
-      address: "Islamabad, Pakistan",
-    },
+    // {
+    //   name: "Khokhar Book Depot",
+    //   email: "khokhar@bookdepot.com",
+    //   contact: "0801-98702",
+    //   address: "Karachi, Pakistan",
+    // },
   ];
 
-  var stores = store.map((store) => (
-    <div className="row text-start listscard">
-      <div className="col-md-3">
-        <img className="listimage" src={store.image} alt="" />
+  var requests = stores.map((store) => (
+    <div className="row text-start requestscard">
+      <div className="col-md-8 requestsdetail">
+        <p className="requestname">{store.name}</p>
+        <p className="requesttext">{store.email}</p>
+        <p className="requesttext">{store.contact}</p>
+        <p className="requesttext">{store.address}</p>
       </div>
-
-      <div className="col-md-5">
-        <p className="listname">{store.name}</p>
-        <p className="listtext">{store.email}</p>
-      </div>
-
       <div className="col-md-4">
-        <p className="listtext">{store.contact}</p>
-        <p className="listtext">{store.address}</p>
+
       </div>
+      <hr />
+      
+    <div className="row justify-content-center">
+      
+        <button className="btn btn-light requestscardbtn">Approve</button>
+        <button className="btn btn-light requestscardbtn">Decline</button>
+    
+    </div>
     </div>
   ));
   return (
@@ -98,7 +96,7 @@ function StoreList() {
                 </li>
                 <li class="nav-item">
                   <Link
-                    to="/storelist"
+                    to="/storerequests"
                     class="nav-link align-middle px-0 sidebartag"
                   >
                     <i class="fa-solid fa-building"></i>{" "}
@@ -111,18 +109,10 @@ function StoreList() {
           <div className="col-md-9">
             <div className="row justify-content-center">
               <div className="col-md-8">
-                <div className="row mt-5">
-                  <div className="col-md-12">
-                    <div class="input-group">
-                      <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-                      <button type="button" class="btn btn-outline-warning">search</button>
-                    </div>
-                  </div>
-                </div>
                 <div className="row justify-content-center">
                   <div className="col-md-12 text-center">
-                    <h5 className="liststitle">Store List</h5>
-                    {stores}
+                    <h5 className="requeststitle">Request Information</h5>
+                    {requests}
                   </div>
                 </div>
               </div>
@@ -134,4 +124,4 @@ function StoreList() {
   );
 }
 
-export default StoreList;
+export default Requestinfo;
